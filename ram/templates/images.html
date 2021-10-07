@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% comment %} @import "div.css"; {% endcomment %}
+{% block title %}Images {% endblock title %}
+{% block body %}
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        background-color: #f2f2f2;
+        overflow: auto;
+        margin-top: 10px;
+    }
+
+    .img {
+        float: left;
+        margin: 5px;
+        width: 284px;
+        border: 1px solid #ccc;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+        transition: width 2s, transform 2s;
+    }
+
+    .text {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .img img:hover {
+        transform: scale(1.2);
+        box-shadow: 6px 6px 20px 0 rgba(205, 248, 248, 0.8), 6px 6px 20px 0 rgba(205, 248, 248, 0.8);
+    }
+</style>
+<div class="container">
+    <div class="img">
+        <img src="/static\image page images/1.jpeg" alt="prince">
+        <div class="text">add image discripation</div>
+    </div>
+    <div class="img">
+        <img src="/static\image page images/1.jpeg" alt="prince">
+        <div class="text">add image discripation</div>
+    </div>
+    <div class="img">
+        <img src="/static\image page images/1.jpeg" alt="prince">
+        <div class="text">add image discripation</div>
+    </div>
+    <div class="img">
+        <img src="/static\image page images/1.jpeg" alt="prince">
+        <div class="text">add image discripation</div>
+    </div>
+    <div class="img">
+        <img src="/static\image page images/1.jpeg" alt="prince">
+        <div class="text">add image discripation</div>
+    </div>
+    <div class="img">
+        <img src="/static\image page images/1.jpeg" alt="prince">
+        <div class="text">add image discripation</div>
+    </div>
+    <div class="img">
+        <img src="/static\image page images/1.jpeg" alt="prince">
+        <div class="text">add image discripation</div>
+    </div>
+    <div class="img">
+        <img src="/static\image page images/1.jpeg" alt="prince">
+        <div class="text">add image discripation</div>
+    </div>
+
+</div>
+{% endblock body %}
