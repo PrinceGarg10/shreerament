@@ -1,0 +1,1 @@
+web: gunicorn shreeRam.wsgi --log-file -
