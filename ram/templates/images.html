@@ -7,22 +7,11 @@
         box-sizing: border-box;
     }
 
-    .container {
-        max-width: 1200px;
-        margin: auto;
-        background-color: #f2f2f2;
-        overflow: auto;
-        margin-top: 10px;
-    }
-
-    .img {
-        float: left;
-        margin: 5px;
-        width: 284px;
+    .gellary {
         border: 1px solid #ccc;
     }
 
-    .img img {
+    .gellary img {
         width: 100%;
         height: auto;
         transition: width 2s, transform 2s;
@@ -33,44 +22,79 @@
         text-align: center;
     }
 
-    .img img:hover {
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    .gellary img:hover {
         transform: scale(1.2);
         box-shadow: 6px 6px 20px 0 rgba(205, 248, 248, 0.8), 6px 6px 20px 0 rgba(205, 248, 248, 0.8);
     }
-</style>
-<div class="container">
-    <div class="img">
-        <img src="/static\image page images/1.jpeg" alt="prince">
-        <div class="text">add image discripation</div>
-    </div>
-    <div class="img">
-        <img src="/static\image page images/1.jpeg" alt="prince">
-        <div class="text">add image discripation</div>
-    </div>
-    <div class="img">
-        <img src="/static\image page images/1.jpeg" alt="prince">
-        <div class="text">add image discripation</div>
-    </div>
-    <div class="img">
-        <img src="/static\image page images/1.jpeg" alt="prince">
-        <div class="text">add image discripation</div>
-    </div>
-    <div class="img">
-        <img src="/static\image page images/1.jpeg" alt="prince">
-        <div class="text">add image discripation</div>
-    </div>
-    <div class="img">
-        <img src="/static\image page images/1.jpeg" alt="prince">
-        <div class="text">add image discripation</div>
-    </div>
-    <div class="img">
-        <img src="/static\image page images/1.jpeg" alt="prince">
-        <div class="text">add image discripation</div>
-    </div>
-    <div class="img">
-        <img src="/static\image page images/1.jpeg" alt="prince">
-        <div class="text">add image discripation</div>
-    </div>
 
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 50%;
+            margin: 6px 0;
+        }
+
+    }
+
+    @media only screen and (max-width: 400px) {
+        .responsive {
+            width: 100%;
+        }
+
+    }
+</style>
+<div class="responsive">
+    <div class="gellary">
+        <img src="/static\image page images/1.jpeg" alt="prince" width="300" height="200">
+        <div class="text">add image discripation</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gellary">
+        <img src="/static\image page images/1.jpeg" alt="prince" width="300" height="200">
+        <div class="text">add image discripation</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gellary">
+        <img src="/static\image page images/1.jpeg" alt="prince" width="300" height="200">
+        <div class="text">add image discripation</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gellary">
+        <img src="/static\image page images/1.jpeg" alt="prince" width="300" height="200">
+        <div class="text">add image discripation</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gellary">
+        <img src="/static\image page images/1.jpeg" alt="prince" width="300" height="200">
+        <div class="text">add image discripation</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gellary">
+        <img src="/static\image page images/1.jpeg" alt="prince" width="300" height="200">
+        <div class="text">add image discripation</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gellary">
+        <img src="/static\image page images/1.jpeg" alt="prince" width="300" height="200">
+        <div class="text">add image discripation</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gellary">
+        <img src="/static\image page images/1.jpeg" alt="prince" width="300" height="200">
+        <div class="text">add image discripation</div>
+    </div>
 </div>
 {% endblock body %}
